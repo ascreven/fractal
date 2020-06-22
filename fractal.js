@@ -21,6 +21,9 @@ fractal.set('project.title', 'Fractal Brown Bag');
 const components = fractal.components;
 components.set("ext", ".njk");
 components.set('path', path.join(__dirname, 'components'));
+
+components.set("default.preview", "@preview");
+
 const nunjucks = require("@frctl/nunjucks");
 components.engine(nunjucks);
 
