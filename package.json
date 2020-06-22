@@ -1,0 +1,9 @@
+{
+  "name": "fractal-brown-bag",
+  "version": "0.1.0",
+  "dependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/nunjucks": "^2.0.2",
+    "uswds": "^2.7.1"
+  }
+}
