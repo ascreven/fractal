@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="{{'/css/uswds.min.css' | path }}">
   </head>
   <body tabindex="0">
-    {% block body %}{{ yield | safe }}{% endblock %}
+    {% block body %}
+      {{ yield | safe }}
+    {% endblock %}
     <script src="{{'/js/uswds.min.js' | path }}"></script>
     <script>
     window.addEventListener('load', function() {

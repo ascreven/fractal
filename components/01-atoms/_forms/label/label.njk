@@ -1,0 +1,8 @@
+{# screenreader only labels only get class usa-sr-only  #}
+{% if srOnly %}
+  {% set classes = 'class="usa-sr-only"' %}
+{% else %}
+  {% set classes = 'class="usa-label"' %}
+{% endif %}
+
+<label {{classes | safe}} for="{{inputId}}">{{text}}</label>

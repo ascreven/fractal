@@ -1,0 +1,14 @@
+{% if not label %}
+  {% set label = {inputId: id} %}
+{% else %}
+  {% set label = label|setAttribute('inputId', id) %}
+{% endif %}
+
+{% if not input %}
+  {% set input = {id: id} %}
+{% else %}
+  {% set input = input|setAttribute('id', id) %}
+{% endif %}
+
+{% render '@label', label, true %}
+{% render '@input', input %}

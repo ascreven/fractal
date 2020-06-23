@@ -1,0 +1,10 @@
+context:
+  inputGroup:
+    id: search-field
+    input:
+      type: search
+    label:
+      srOnly: true
+  button:
+    type: submit
+    text: <span class='usa-search__submit-text'>Search</span>

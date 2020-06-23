@@ -1,0 +1,7 @@
+{% if not type %}
+  {% set type = "text" %}
+{% endif %}
+
+<button class="usa-button" type="{{type}}">
+  {{ text | safe }}
+</button>

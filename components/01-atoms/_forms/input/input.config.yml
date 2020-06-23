@@ -1,0 +1,4 @@
+context:
+  type: text
+  id: input-type-text
+  placeholder: placeholder

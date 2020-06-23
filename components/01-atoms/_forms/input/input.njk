@@ -1,0 +1,6 @@
+{% if not type %}
+  {% set type = "text" %}
+{% endif %}
+
+<input class="usa-input" id="{{id}}" type="{{type}}"
+{%- if placeholder %} placeholder="{{placeholder}}"{% endif %}>

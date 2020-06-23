@@ -24,7 +24,16 @@ components.set('path', path.join(__dirname, 'components'));
 
 components.set("default.preview", "@preview");
 
-const nunjucks = require("@frctl/nunjucks");
+// set template engine
+const nunjucks = require("@frctl/nunjucks")({
+  filters: {
+    // add attribut to object
+    setAttribute: function setAttribute(dictionary, key, value) {
+      dictionary[key] = value;
+      return dictionary;
+    }
+  }
+});
 components.engine(nunjucks);
 
 /*
@@ -40,7 +49,6 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
 /*
 * Theme
 */
-
 const mandelbrot = require('@frctl/mandelbrot');
 // create a new instance with custom config options
 const customTheme = mandelbrot({
