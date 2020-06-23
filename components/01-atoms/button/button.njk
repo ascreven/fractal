@@ -2,6 +2,6 @@
   {% set type = "text" %}
 {% endif %}
 
-<button class="usa-button" type="{{type}}">
+<button class="usa-button{% for modifier in modifiers %} usa-button--{{modifier}}{% endfor %}" type="{{type}}">
   {{ text | safe }}
 </button>

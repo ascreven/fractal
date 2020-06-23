@@ -1,2 +1,9 @@
+default: Primary
+collated: true
 context:
   text: Button
+variants:
+  - name: Secondary
+    context:
+      modifiers:
+        - secondary
